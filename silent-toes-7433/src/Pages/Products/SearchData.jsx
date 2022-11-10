@@ -1,41 +1,31 @@
 import React, { useState } from 'react'
 import {Box,Button,Flex,Image,Input,InputGroup,InputLeftElement,Select,Text} from "@chakra-ui/react";
 import { SearchIcon } from '@chakra-ui/icons';
-const Search = () => {
+const SearchData = () => {
     const [search,setSearch]=useState("")
     const [place,setPlace]=useState([])
 
   return (
     <>
      <Box>
-     <Image
-     src='https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/Pimal2-1.2d5d237dbd32.jpg'
-     alt='image'
-     width={"100%"}
-     filter={"auto"} brightness="70%"
-     height={"520px"} />
+     
      <Flex justifyContent={"center"}
       alignItems="center" brightness={"100%"}>
-      <Box minW={{base:"90%",lg:"884px"}} 
+      <Box minW={{base:"90%",lg:"884px"}} w="80%"
+      mt="20px" background={"#fff"} color="#666"
+       boxShadow={"0 5px 15px rgb(0 0 0 / 8%)"} 
       fontFamily={"ProximaNovaLight","-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue","Arial,sans-serif"}
-      maxW={{base:"90%"}}  style={{height:"auto",color:"white",
-      fontWeight:"600",position:"relative",marginTop:"-26rem"}}>
-        <Text fontSize={"31px"} as="h1"  >
-        Book
-        <Text ml={"0.4rem"} mr="0.4rem" as={"s"} fontSize="31px">Hotels</Text>
-        Vacation Rental
+      maxW={{base:"90%"}}  style={{height:"auto"}}>
+        <Text fontSize={"20px"} fontFamily="ProximaNova"
+         color="#000000" margin={"0px 0px 20px"} as="h1"  >
+        Goa Holiday Homes
         </Text>
-        <Text as="h1" fontSize={"31px"} mb="1rem">Top Holiday Homes - Villas, Appartments & Homestays</Text>
+        <Text as="h2" fontSize={"18px"} margin={"20px 0px"} color="#333333">We have 103 Vacation Rentals - search <br /> by dates for availability</Text>
       <Box style={{maxWidth:"100%", display:"flex",margin:"auto",height:"auto",background:"#fff",justifyContent:"center",alignItems:"center"}} pb={{base:"0rem", lg:"1rem"}}>
-      <Flex style={{justifyContent:"center",alignItems:"center",alignContent:"center",paddingTop:"0.6rem",paddingLeft:"0.6rem",paddingRight:"0.6rem",color:"#000"}} direction={{base:"column",xl:"row"}}>
-       <Flex style={{direction:"column",height:"auto",overflowY:"hidden"}} textShadow="none" fontWeight={"200"} width="100%">
-       <InputGroup>
-        <InputLeftElement pointerEvents={"none"} children={<SearchIcon color={"gray.400"} />} />
-       <Input 
-        borderRadius={"none"} width="200%" pl={"2rem"} type="text"
-        placeholder='Location' value={search} onChange={(e)=>setSearch(e.target.value)}/>
-       </InputGroup>
-       </Flex>
+      <Flex style={{justifyContent:"center",alignItems:"center",
+      alignContent:"center",paddingTop:"0.6rem",
+      paddingLeft:"0.6rem",paddingRight:"0.6rem",color:"#000"}} 
+      direction={{base:"column",xl:"row"}}>
        <InputGroup>
         <InputLeftElement pointerEvents={"none"} children={
             <svg width={"20px"} height="20" viewBox='0 0 20 20'
@@ -134,7 +124,7 @@ const Search = () => {
                   <option value="option49">49 guests</option>
                   <option value="option50">50 guests</option>
        </Select>
-       <Button ml={"8px"} colorScheme={"blue"} borderRadius="none" width={"60%"}
+       <Button ml={"8px"} colorScheme={"blue"} borderRadius="none" width={"60%"} mb="5px" mt="5px"
        >Search</Button>
       </Flex>
       </Box>
@@ -145,4 +135,4 @@ const Search = () => {
   )
 }
 
-export default Search
+export default SearchData

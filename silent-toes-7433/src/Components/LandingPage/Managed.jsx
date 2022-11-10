@@ -136,7 +136,7 @@ const Managed = () => {
    <Flex direction={{base:"column",lg:"row"}}
    mb={{base:"2rem",lg:"2rem"}}  justifyContent={"space-between"}>
    <Box boxShadow={"lg"} mb={{base:"2rem",lg:"2rem"}} 
-   w={{base:"100%",lg:"48%"}} h="294px">
+   w={{base:"100%",lg:"48%"}} h="auto">
   <Text fontSize={"25px"} fontWeight="200" textAlign={"center"}>
   Holiday Home Investment Opportunities
   </Text>
@@ -208,13 +208,14 @@ const Managed = () => {
             fontSize="13px"
             display="block"
             m="auto"
+            mb="10px"
             borderRadius="none"
             colorScheme="blue"
             fontWeight="400">
     EXPLORE INVESTMENT OPPORTUNITIES
          </Button>
    </Box>
-   <Box boxShadow={"lg"} w={{base:"100%",lg:"48%"}} h="294px">
+   <Box boxShadow={"lg"} w={{base:"100%",lg:"48%"}} h="auto">
    <Text fontSize="24px" fontWeight="200" textAlign="center">
             Are You A Holiday Home Owner/Manager?
           </Text>
@@ -292,6 +293,7 @@ const Managed = () => {
             fontSize="13px"
             display="block"
             m="auto"
+            mb="10px"
             borderRadius="none"
             colorScheme="blue"
             fontWeight="400">

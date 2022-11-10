@@ -13,6 +13,8 @@ import {
     DrawerContent,
     DrawerCloseButton,
   } from "@chakra-ui/react"
+import Login from '../../Pages/Signup/Login';
+import Signup from '../../Pages/Signup/Signup';
 const Navbar = () => {
     const [currency,setCurrency]=useState("INR")
     const [isActive, setIsActive] = useState(true);
@@ -87,16 +89,25 @@ const Navbar = () => {
          <PopoverContent borderRadius="none" 
          width={"200px"} mr="8rem" p="1rem" pl="1rem">
          
-         <PopoverBody width="100px">
+         {/* <PopoverBody width="100px">
             <Text
-            fontSize={"14px"} color="gray.400" _hover={{color:"black",cursor:"pointer"}}
+            fontSize={"14px"}
+             color="gray.400" _hover={{color:"black",cursor:"pointer"}}
              onClick={handleLogout}>
                <Link to="/">LogOut</Link>
             </Text>
-         </PopoverBody> 
+         </PopoverBody>  */}
          <PopoverBody w='100px'>
-                  <Text fontSize='14px' color='gray' _hover={{cursor: 'pointer',color: 'black'}} mb='1rem'><Link to="/login">SIGN IN</Link></Text>
-                  <Text fontSize='14px' color='gray' _hover={{cursor: 'pointer',color: 'black'}}><Link to="/signup">SIGN UP</Link></Text>
+                  <Button mb="0.25rem" background={"white"} > 
+                  <Text fontSize='13px' fontFamily={"ProximaNova"}
+                  color='#999999' _hover={{cursor: 'pointer'
+                  ,color: 'black'}}>
+                  <Link to="/"> <Login/> </Link></Text></Button>
+               <Button background={"white"}>   <Text fontSize='13px'
+               fontFamily={"ProximaNova"} 
+                  color='#999999' _hover={{cursor: 'pointer'
+                  ,color: 'black'}} >
+                  <Link to="/"><Signup/></Link></Text></Button>
                 </PopoverBody>
          </PopoverContent>
        </Popover>
