@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import {  Tabs, TabList, Tab, TabPanels, TabPanel} from '@chakra-ui/react';
+import {  Tabs, TabList, Tab, TabPanels, TabPanel, Input, Button} from '@chakra-ui/react';
 
 
 // Import Swiper styles
@@ -13,7 +13,8 @@ import "swiper/css/pagination";
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
 import Navbar from '../../Components/Navbar/Navbar'
-import {Box,Image, Text,Breadcrumb,BreadcrumbItem,BreadcrumbLink, Flex} from "@chakra-ui/react";
+import {Box,Image, Text,Breadcrumb,BreadcrumbItem,BreadcrumbLink,
+   Flex} from "@chakra-ui/react";
 const SingleProduct = () => {
   return (
     <>
@@ -196,6 +197,44 @@ const SingleProduct = () => {
         </Box>
       </Flex>
     </Box>
+    <Box>
+      <Box>
+      <Flex mt="20px" ml="28px">
+          <Text fontSize={"48.75px"} color="#000000" fontFamily={"ProximaNova"}>Rs.2950</Text>
+          <Text fontSize={"19.5px"} color="#484848" fontFamily={"ProximaNova"} pl="20px" pt="28px"> per night</Text>
+      </Flex>
+      <Box background={"#edfbd6"} h="40px" pt="10px" color="#32d296" fontSize={"15px"} fontFamily="ProximaNova">
+        Your dates are available to book
+      </Box>
+      <Box>
+        <Flex mt="20px">
+          <Input type="date" placeholder="check-in" />
+          <Input type="date" placeholder="check-out" />
+        </Flex>
+      </Box>
+      <Box><Text fontSize={"13.125px"} fontFamily="ProximaNova" color="#999999">Rateplan: No meals provided (European Plan)</Text></Box>
+      <Box>
+        <Flex justifyContent={"space-between"}>
+          <Text fontSize={"15px"} fontFamily="ProximaNova" color="#666666">Total</Text>
+          <Text fontSize={"15px"} fontFamily="ProximaNova" color="#666666">Rs.2950</Text>
+        </Flex>
+        <Flex justifyContent={"space-between"}>
+          <Text fontSize={"12px"} fontFamily="ProximaNova" color="#666666">Includes taxes & fees</Text>
+          <Text fontSize={"12px"} fontFamily="ProximaNova" color="#1e89f0">View details</Text>
+        </Flex>
+      </Box>
+      <Box>
+      <Text _hover={{cursor:"pointer"}} mt="20px" h="55px" pt="16px" fontSize={"13.125px"} 
+        fontFamily="ProximaNova"
+        background={"#1e87f0"} color="#ffffff">
+          REQUEST TO BOOK
+        </Text>
+      </Box>
+       <Box mt="10px">
+        <Text  fontSize={"12px"} fontFamily="ProximaNova" color="#1e87f0">Stringent Cancellation Policy</Text>
+       </Box>
+      </Box>
+    </Box>
    </Box>
    </Box>
 
@@ -290,8 +329,8 @@ const SingleProduct = () => {
         </TabList>
         <TabPanels>
             <TabPanel p="0px">
-                <Box w="170%" mt="3.4rem" >
-                    <Flex direction={{base:"column",lg:"row"}}
+                <Box w="170%" mt="3.4rem">
+                    <Flex direction={{base:"row",lg:"row"}}
                     justifyContent="space-between">
                     <Box>
                       <Box
@@ -326,7 +365,7 @@ const SingleProduct = () => {
                     </Box>      
                        
                        <Box>
-                        <Text ml="50px" >
+                        <Text ml="50px" flexDirection={{base:"row",lg:"column"}}>
                         This Apartment rests on the 4th Floor, This apartment can accommodate maximum 4 guests. It has One Air-Conditioned bedroom with a double bed. Extra mattresses are provided. It also has a lift facility and private parking in the complex and 24X7 security services.
 
 Living Area:
@@ -347,8 +386,7 @@ The kitchen is separate and is fully equipped with a Double door fridge, Inducti
             </TabPanel>
             <TabPanel p="0px">
                 <Box w='100%' mt='3.4rem'>
-                    <Flex direction={{base:"row",lg:'row'}}
-                    justifyContent="space-between">
+                    <Flex flexDirection={{base:"row",lg:"row"}} justifyContent="space-between">
                     <Box width={"400px"}>
                       <Text color="#666666" fontFamily={"ProximaNOva"} fontSize="15px">
                       Default Cancellation Policy 

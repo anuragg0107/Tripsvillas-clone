@@ -14,7 +14,7 @@ import {
     Input,
 } from '@chakra-ui/react';
 import { AppContext } from '../../Context/AppContext';
-// import { Navigate } from 'react-router-dom';
+ import { Navigate } from 'react-router-dom';
 
 const Login = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -26,6 +26,7 @@ const Login = () => {
   // if(auth){
   //   return <Navigate to="/" />
   // }
+
     return (
     <>
     <Button background={"white"}  onClick={onOpen}>Sign In</Button>
@@ -42,7 +43,7 @@ const Login = () => {
              <Button background={"white"}
              _hover={{background:"white"}}
              fontSize={"13.125px"} pl="119px" pt="10px"
-              color={"#1e87f0"}>Sign Up Instead</Button>
+              color={"#1e87f0"} >Sign Up Instead</Button>
            </Flex>
         </Box>
     </ModalHeader>

@@ -24,9 +24,7 @@ const Signup = () => {
    const [pass,setpass]=useState("")
    const {handleCreateAccount,  auth} = useContext(AppContext);
     
-   if(auth){
-    return 
-   }
+ 
 
     return (
     <>
@@ -44,7 +42,7 @@ const Signup = () => {
              <Button background={"white"}
              _hover={{background:"white"}}
              fontSize={"13.125px"}
-              color={"#1e87f0"}>Sign In Instead</Button>
+              color={"#1e87f0"} >Sign In Instead</Button>
            </Flex>
         </Box>
     </ModalHeader>
@@ -109,13 +107,13 @@ const Signup = () => {
      <Input type="email" placeholder='Email Address' 
     value={email} onChange={(e)=>setEmail(e.target.value)}
      height={"40px"} verticalAlign="middle" background={"#fff"}
-      display="inline-block" padding="1px 2px" />
+      display="inline-block" padding="10px 10px" />
      </Box>
      <Box padding="10px" display="block">
      <Input type="Password" placeholder='Password'
      value={pass} onChange={(e)=>setpass(e.target.value)}
       height={"40px"} verticalAlign="middle" background={"#fff"}
-      display="inline-block" padding="1px 2px" />
+      display="inline-block" padding="10px 10px" />
      </Box>
     <Box padding={"10px"}  >
       <Flex direction={"row"}  flexDirection={{base:"column",lg:"row"}} >
