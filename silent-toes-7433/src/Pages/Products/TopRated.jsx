@@ -2,10 +2,8 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import React, { Component, useContext, useEffect, useState } from "react";
 import Slider from "react-slick";
 
-import {Stack, 
-   Badge,  Box, Button, Center, Flex,
-    Image, SimpleGrid, Text, useDisclosure } from "@chakra-ui/react";
-import { Link, Navigate, useNavigate, useSearchParams } from "react-router-dom";
+import {  Badge,  Box,   Image,  Text,  } from "@chakra-ui/react";
+import { Navigate, useNavigate, useSearchParams } from "react-router-dom";
 
 // import slides from "../LandingPage/NA_Slider.module.css";
 import "slick-carousel/slick/slick.css";
@@ -45,7 +43,7 @@ function SamplePrevArrow(props) {
 
 
 
-export default class Holiday extends Component {
+export default class TopRated extends Component {
   render() {
     const settings = {
       dots: true,
@@ -91,7 +89,7 @@ export default class Holiday extends Component {
           ref={(slider) => (this.slider = slider)}
           {...settings}
         >
-              <Link to="/singleproduct">
+              
             <Box
               maxW="250px"
               borderWidth="1px"
@@ -102,32 +100,36 @@ export default class Holiday extends Component {
                 boxSize="250px"
                 backgroundPosition={"center"}
                 objectFit="cover"
-                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/42631100/739f304d491511e8bf470a8e1b1ce4da_mob_thumbnail.jpg"
+                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_280x210/21459385/zebra-room-6_mid_thumbnail.jpe"
                 alt="villa"
               />
               <br />
+              <Box opacity={"0.7"} mt="-74px" height={"65px"} 
+              padding="10px 15px" backgroundColor={"#222222"}>
+             <Text fontSize="15px"
+               color={"#ffffffb3"} maxw="100%" 
+               fontFamily={"ProximaNova"}>
+               Amazingly Spacious Guest House</Text>
               <Text fontSize="15px"
-               color={"#484848"} maxw="100%" overflow={"hidden"}
+               color={"#ffffffb3"} maxw="100%" overflow={"hidden"}
               textOverflow="ellipsis" whiteSpace={"nowrap"}
                fontFamily={"ProximaNova"}>
                arpora,goa,India
               </Text>
+              </Box>
               <br/>
               <Box p={2}>
                 <Badge colorScheme="white"  fontWeight="light">
-                 <Text color="#1e87f0" fontSize={"12px"} fontFamily="ProximaNova"> Homestay | 1 BR | 2 Bath | Wifi | TV</Text>
+                 <Text color="#484848" 
+                  fontSize={"15px"} 
+                  fontFamily="ProximaNova"
+                  > Excellent Stay</Text>
+                  <Text fontSize={"12px"} 
+                  color="#484848">The house and rooms are very....</Text>
                 </Badge>
               </Box>
-
-              <Flex direction="row" mt="10px">
-                <Text color={"#1e87f0"} pl="19px"
-                fontSize="15px" fontFamily={"ProximaNova"} fontWeight="bolder"
-                >  ₹ 3552  </Text><Text pl="5px" color={"#999999"} fontSize="13.125px" fontFamily={"ProximaNova"}> per night</Text>
-              </Flex>
             </Box>
-            </Link>
-             
-             <Link to="/singleproduct">
+
             <Box
               maxW="250px"
               borderWidth="1px"
@@ -138,32 +140,37 @@ export default class Holiday extends Component {
                 boxSize="250px"
                 backgroundPosition={"center"}
                 objectFit="cover"
-                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/21737603/house1-big_new_mob_thumbnail.jpeg"
+                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_280x210/97107652/24ca17f3004411e988750a8e1b1ce4da_mid_thumbnail.jpeg"
                 alt="villa"
               />
               <br />
+              <Box opacity={"0.7"} mt="-80px" height={"65px"} 
+              padding="10px 15px" backgroundColor={"#222222"}>
+             <Text fontSize="15px"
+               color={"#ffffffb3"} maxw="100%" 
+               fontFamily={"ProximaNova"}>
+              Beach Stay At Arambol</Text>
               <Text fontSize="15px"
-               color={"#484848"} maxw="100%" overflow={"hidden"}
+               color={"#ffffffb3"} maxw="100%" overflow={"hidden"}
               textOverflow="ellipsis" whiteSpace={"nowrap"}
                fontFamily={"ProximaNova"}>
-              Candollm, goa, India
+               Arambol,Goa, India
               </Text>
+              </Box>
               <br/>
               <Box p={2}>
                 <Badge colorScheme="white"  fontWeight="light">
-                 <Text color="#1e87f0" fontSize={"12px"}
-                  fontFamily="ProximaNova"> Room | Swimming Pool | AC | TV</Text>
+                 <Text color="#484848" 
+                  fontSize={"15px"} 
+                  fontFamily="ProximaNova"
+                  > Pleasant Stay Stay</Text>
+                  <Text fontSize={"12px"} 
+                  color="#484848">The stay was good....</Text>
                 </Badge>
               </Box>
-
-              <Flex direction="row" mt="10px">
-                <Text color={"#1e87f0"} pl="19px"
-                fontSize="15px" fontFamily={"ProximaNova"} fontWeight="bolder"
-                >  ₹ 4204  </Text><Text pl="5px" color={"#999999"} fontSize="13.125px" fontFamily={"ProximaNova"}> per night</Text>
-              </Flex>
             </Box>
-            </Link>
-            <Link to="singleproduct">
+          
+            
             <Box
               maxW="250px"
               borderWidth="1px"
@@ -174,33 +181,37 @@ export default class Holiday extends Component {
                 boxSize="250px"
                 backgroundPosition={"center"}
                 objectFit="cover"
-                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/86678729/10356162_643636019076128_4481652960902955516_n_mob_thumbnail.jpeg"
+                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_280x210/67538484/image_28_mid_thumbnail.jpeg"
                 alt="villa"
               />
               <br />
+              <Box opacity={"0.7"} mt="-80px" height={"65px"} 
+              padding="10px 15px" backgroundColor={"#222222"}>
+             <Text fontSize="15px"
+               color={"#ffffffb3"} maxw="100%" 
+               fontFamily={"ProximaNova"}>
+              Cozy 3 Bhk Vila </Text>
               <Text fontSize="15px"
-               color={"#484848"} maxw="100%" overflow={"hidden"}
+               color={"#ffffffb3"} maxw="100%" overflow={"hidden"}
               textOverflow="ellipsis" whiteSpace={"nowrap"}
                fontFamily={"ProximaNova"}>
-               Denaulim, goa, India
+               Gulrlm, goa, India
               </Text>
+              </Box>
               <br/>
               <Box p={2}>
                 <Badge colorScheme="white"  fontWeight="light">
-                 <Text color="#1e87f0"
-                  fontSize={"12px"} fontFamily="ProximaNova">
-                  Room | Swimming Pool | AC | TV</Text>
+                 <Text color="#484848" 
+                  fontSize={"15px"} 
+                  fontFamily="ProximaNova"
+                  > The Stay Was Pleasant</Text>
+                  <Text fontSize={"12px"} 
+                  color="#484848">It was great, liked the place ....</Text>
                 </Badge>
               </Box>
-
-              <Flex direction="row" mt="10px">
-                <Text color={"#1e87f0"} pl="19px"
-                fontSize="15px" fontFamily={"ProximaNova"} fontWeight="bolder"
-                >  ₹ 5636  </Text><Text pl="5px" color={"#999999"} fontSize="13.125px" fontFamily={"ProximaNova"}> per night</Text>
-              </Flex>
             </Box>
-            </Link>
-             <Link to="/singleproduct">
+          
+
             <Box
               maxW="250px"
               borderWidth="1px"
@@ -211,32 +222,38 @@ export default class Holiday extends Component {
                 boxSize="250px"
                 backgroundPosition={"center"}
                 objectFit="cover"
-                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/33859485/large%206_mob_thumbnail.jpeg"
+                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_280x210/48556786/img-20120114-00193_mid_thumbnail.jpg"
                 alt="villa"
               />
               <br />
+              <Box opacity={"0.7"} mt="-80px" height={"65px"} 
+              padding="10px 15px" backgroundColor={"#222222"}>
+             <Text fontSize="15px"
+               color={"#ffffffb3"} maxw="100%" 
+               fontFamily={"ProximaNova"}>
+              3 Bhk Bungalow </Text>
               <Text fontSize="15px"
-               color={"#484848"} maxw="100%" overflow={"hidden"}
+               color={"#ffffffb3"} maxw="100%" overflow={"hidden"}
               textOverflow="ellipsis" whiteSpace={"nowrap"}
                fontFamily={"ProximaNova"}>
-              Panaji,goa,India
+               Mapusa, goa, India
               </Text>
+              </Box>
               <br/>
               <Box p={2}>
                 <Badge colorScheme="white"  fontWeight="light">
-                 <Text color="#1e87f0" fontSize={"12px"} fontFamily="ProximaNova"> Homestay | 1 BR | 2 Bath | Wifi | TV</Text>
+                 <Text color="#484848" 
+                  fontSize={"15px"} 
+                  fontFamily="ProximaNova"
+                  > A Pleasant Stay</Text>
+                  <Text fontSize={"12px"} 
+                  color="#484848">We were of 6 adults stayed for 5...</Text>
                 </Badge>
               </Box>
-
-              <Flex direction="row" mt="10px">
-                <Text color={"#1e87f0"} pl="19px"
-                fontSize="15px" fontFamily={"ProximaNova"} fontWeight="bolder"
-                >  ₹ 4349  </Text><Text pl="5px" color={"#999999"} fontSize="13.125px" fontFamily={"ProximaNova"}> per night</Text>
-              </Flex>
             </Box>
-            </Link>
+      
 
-           <Link to="/singleproudct">
+          
             <Box
               maxW="250px"
               borderWidth="1px"
@@ -247,33 +264,38 @@ export default class Holiday extends Component {
                 boxSize="250px"
                 backgroundPosition={"center"}
                 objectFit="cover"
-                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/21176215/xm7zhhhtddf_5624aa93f957687ab97a5a5b83c9025e_mob_thumbnail.jpeg"
+                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_280x210/92969019/9918fa87f24a11e888730a8e1b1ce4da_mid_thumbnail.jpg"
                 alt="villa"
               />
               <br />
+              <Box opacity={"0.7"} mt="-80px" height={"65px"} 
+              padding="10px 15px" backgroundColor={"#222222"}>
+             <Text fontSize="15px"
+               color={"#ffffffb3"} maxw="100%" 
+               fontFamily={"ProximaNova"}>
+              Standard Non Ac Stay</Text>
               <Text fontSize="15px"
-               color={"#484848"} maxw="100%" overflow={"hidden"}
+               color={"#ffffffb3"} maxw="100%" overflow={"hidden"}
               textOverflow="ellipsis" whiteSpace={"nowrap"}
                fontFamily={"ProximaNova"}>
-               Candolim, goa, India
+               Calangute,goa,India
               </Text>
+              </Box>
               <br/>
               <Box p={2}>
                 <Badge colorScheme="white"  fontWeight="light">
-                 <Text color="#1e87f0" fontSize={"12px"}
-                  fontFamily="ProximaNova">Resort | 2 BR | Swimming Pool  | 2 Bath | Wifi | TV</Text>
+                 <Text color="#484848" 
+                  fontSize={"15px"} 
+                  fontFamily="ProximaNova"
+                  > Had A Pleasant Stay</Text>
+                  <Text fontSize={"12px"} 
+                  color="#484848">A property was good....</Text>
                 </Badge>
               </Box>
-
-              <Flex direction="row" mt="10px">
-                <Text color={"#1e87f0"} pl="19px"
-                fontSize="15px" fontFamily={"ProximaNova"} fontWeight="bolder"
-                >  ₹ 7972  </Text><Text pl="5px" color={"#999999"} fontSize="13.125px" fontFamily={"ProximaNova"}> per night</Text>
-              </Flex>
             </Box>
-            </Link>
+        
 
-          <Link to="/singleproduct">
+          
             <Box
               maxW="250px"
               borderWidth="1px"
@@ -284,32 +306,36 @@ export default class Holiday extends Component {
                 boxSize="250px"
                 backgroundPosition={"center"}
                 objectFit="cover"
-                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/24101244/img_0382_mob_thumbnail.jpeg"
+                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_280x210/64219945/bd665473dc2f11e985440a8e1b1ce4da_mid_thumbnail.jpg"
                 alt="villa"
               />
               <br />
+              <Box opacity={"0.7"} mt="-80px" height={"65px"} 
+              padding="10px 15px" backgroundColor={"#222222"}>
+             <Text fontSize="15px"
+               color={"#ffffffb3"} maxw="100%" 
+               fontFamily={"ProximaNova"}>
+              HomeStay Accommodation </Text>
               <Text fontSize="15px"
-               color={"#484848"} maxw="100%" overflow={"hidden"}
+               color={"#ffffffb3"} maxw="100%" overflow={"hidden"}
               textOverflow="ellipsis" whiteSpace={"nowrap"}
                fontFamily={"ProximaNova"}>
-              Sinquerim, goa, India
+               Majorda,goa,India
               </Text>
+              </Box>
               <br/>
               <Box p={2}>
                 <Badge colorScheme="white"  fontWeight="light">
-                 <Text color="#1e87f0" fontSize={"12px"}
-                  fontFamily="ProximaNova"> Villa | 3 BR | 4 Bath | Swimming Pool | Wifi | TV</Text>
+                 <Text color="#484848" 
+                  fontSize={"15px"} 
+                  fontFamily="ProximaNova"
+                  > Excellent Stay</Text>
+                  <Text fontSize={"12px"} 
+                  color="#484848">The stay at the property was good....</Text>
                 </Badge>
               </Box>
-
-              <Flex direction="row" mt="10px">
-                <Text color={"#1e87f0"} pl="19px"
-                fontSize="15px" fontFamily={"ProximaNova"} fontWeight="bolder"
-                >  ₹ 11596  </Text><Text pl="5px" color={"#999999"} fontSize="13.125px" fontFamily={"ProximaNova"}> per night</Text>
-              </Flex>
             </Box>
-            </Link>
-            <Link to="/singleproduct">
+          
           <Box
               maxW="250px"
               borderWidth="1px"
@@ -320,32 +346,36 @@ export default class Holiday extends Component {
                 boxSize="250px"
                 backgroundPosition={"center"}
                 objectFit="cover"
-                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/61430860/village-side_mob_thumbnail.jpeg"
+                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_280x210/28348744/romaldoguesthouse2_mid_thumbnail.jpg"
                 alt="villa"
               />
               <br />
+              <Box opacity={"0.7"} mt="-80px" height={"65px"} 
+              padding="10px 15px" backgroundColor={"#222222"}>
+             <Text fontSize="15px"
+               color={"#ffffffb3"} maxw="100%" 
+               fontFamily={"ProximaNova"}>
+               Guesthouse Accommodation</Text>
               <Text fontSize="15px"
-               color={"#484848"} maxw="100%" overflow={"hidden"}
+               color={"#ffffffb3"} maxw="100%" overflow={"hidden"}
               textOverflow="ellipsis" whiteSpace={"nowrap"}
                fontFamily={"ProximaNova"}>
-               Calangute, goa, India
+               Bardez,goa,India
               </Text>
+              </Box>
               <br/>
               <Box p={2}>
                 <Badge colorScheme="white"  fontWeight="light">
-                 <Text color="#1e87f0" fontSize={"12px"}
-                  fontFamily="ProximaNova"> Apartment | 1 BR | 2 Bath | Wifi | Swimming pool</Text>
+                 <Text color="#484848" 
+                  fontSize={"15px"} 
+                  fontFamily="ProximaNova"
+                  > Nice And Helpful Owners</Text>
+                  <Text fontSize={"12px"} 
+                  color="#484848">The stay was good....</Text>
                 </Badge>
               </Box>
-
-              <Flex direction="row" mt="10px">
-                <Text color={"#1e87f0"} pl="19px"
-                fontSize="15px" fontFamily={"ProximaNova"} fontWeight="bolder"
-                >  ₹ 4784  </Text><Text pl="5px" color={"#999999"} fontSize="13.125px" fontFamily={"ProximaNova"}> per night</Text>
-              </Flex>
             </Box>
-            </Link>
-            <Link to="/singleproduct">
+          
             <Box
               maxW="250px"
               borderWidth="1px"
@@ -356,32 +386,36 @@ export default class Holiday extends Component {
                 boxSize="250px"
                 backgroundPosition={"center"}
                 objectFit="cover"
-                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/16050796/d1_2_mob_thumbnail.jpeg"
+                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_280x210/29784314/inside-6-1600x1200_mid_thumbnail.JPG"
                 alt="villa"
               />
               <br />
+              <Box opacity={"0.7"} mt="-80px" height={"65px"} 
+              padding="10px 15px" backgroundColor={"#222222"}>
+             <Text fontSize="15px"
+               color={"#ffffffb3"} maxw="100%" 
+               fontFamily={"ProximaNova"}>
+              Holiday Home</Text>
               <Text fontSize="15px"
-               color={"#484848"} maxw="100%" overflow={"hidden"}
+               color={"#ffffffb3"} maxw="100%" overflow={"hidden"}
               textOverflow="ellipsis" whiteSpace={"nowrap"}
                fontFamily={"ProximaNova"}>
-               Morjim, goa, India
+               Saligao, goa, India
               </Text>
+              </Box>
               <br/>
               <Box p={2}>
                 <Badge colorScheme="white"  fontWeight="light">
-                 <Text color="#1e87f0" fontSize={"12px"} fontFamily="ProximaNova"
-                 > Room  | AC | Wifi | TV</Text>
+                 <Text color="#484848" 
+                  fontSize={"15px"} 
+                  fontFamily="ProximaNova"
+                  > At Home Feel :-)</Text>
+                  <Text fontSize={"12px"} 
+                  color="#484848">At home feel....</Text>
                 </Badge>
               </Box>
-
-              <Flex direction="row" mt="10px">
-                <Text color={"#1e87f0"} pl="19px"
-                fontSize="15px" fontFamily={"ProximaNova"} fontWeight="bolder"
-                >  ₹ 1812  </Text><Text pl="5px" color={"#999999"} fontSize="13.125px" fontFamily={"ProximaNova"}> per night</Text>
-              </Flex>
             </Box>
-            </Link>
-            <Link to="/singleproduct">
+          
             <Box
               maxW="250px"
               borderWidth="1px"
@@ -392,31 +426,35 @@ export default class Holiday extends Component {
                 boxSize="250px"
                 backgroundPosition={"center"}
                 objectFit="cover"
-                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_640x960/17531158/v4_mob_thumbnail.jpeg"
+                src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_280x210/15048096/candolim-029_mid_thumbnail.jpg"
                 alt="villa"
               />
               <br />
+              <Box opacity={"0.7"} mt="-80px" height={"65px"} 
+              padding="10px 15px" backgroundColor={"#222222"}>
+             <Text fontSize="15px"
+               color={"#ffffffb3"} maxw="100%" 
+               fontFamily={"ProximaNova"}>
+               4 Bedroom Bungalow</Text>
               <Text fontSize="15px"
-               color={"#484848"} maxw="100%" overflow={"hidden"}
+               color={"#ffffffb3"} maxw="100%" overflow={"hidden"}
               textOverflow="ellipsis" whiteSpace={"nowrap"}
                fontFamily={"ProximaNova"}>
-               Candolim, goa, India
+               Candollm, goa, India
               </Text>
+              </Box>
               <br/>
               <Box p={2}>
                 <Badge colorScheme="white"  fontWeight="light">
-                 <Text color="#1e87f0" fontSize={"12px"} 
-                 fontFamily="ProximaNova"> Villa | Swimming Pool | 5 BR | 5 Bath </Text>
+                 <Text color="#484848" 
+                  fontSize={"15px"} 
+                  fontFamily="ProximaNova"
+                  > Excellent Stay</Text>
+                  <Text fontSize={"12px"} 
+                  color="#484848">Excellent villa, well maintained....</Text>
                 </Badge>
               </Box>
-
-              <Flex direction="row" mt="10px">
-                <Text color={"#1e87f0"} pl="19px"
-                fontSize="15px" fontFamily={"ProximaNova"} fontWeight="bolder"
-                >  ₹ 96965  </Text><Text pl="5px" color={"#999999"} fontSize="13.125px" fontFamily={"ProximaNova"}> per night</Text>
-              </Flex>
             </Box>
-            </Link>
         </Slider>
 
       </div>

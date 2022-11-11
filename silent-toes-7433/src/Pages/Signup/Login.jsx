@@ -3,7 +3,7 @@ import {
     Text,Box,
     Button,
     Modal,
-    ModalOverlay,Select,
+    ModalOverlay,
     ModalContent,
     ModalHeader,
     ModalFooter,
@@ -14,10 +14,10 @@ import {
     Input,
 } from '@chakra-ui/react';
 import { AppContext } from '../../Context/AppContext';
-import { Navigate } from 'react-router-dom';
+// import { Navigate } from 'react-router-dom';
 
 const Login = () => {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+  const { isOpen, onOpen, onClose } = useDisclosure()
   const [email,setEmail]=useState("");
   const [pass,setPass]=useState('');
   const context = useContext(AppContext);

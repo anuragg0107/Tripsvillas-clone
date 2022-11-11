@@ -1,7 +1,7 @@
 import { Box,Text,Image } from '@chakra-ui/react'
 import React, {  useEffect, useState } from "react";
 import axios from "axios";
-import {useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -115,6 +115,7 @@ const Destination = () => {
     return(
         <Box maxW={"250px"} _hover={{cursor:"pointer"}} maxH="140px" sx={boxStyle}
         key={el.id} onClick={()=>navigate("/products")}>
+      <Link to="products">
         <Image src={el.img}
             alt={el.location} filter="auto" brightness={"70%"}
             width="90%" height={"140px"}  />
@@ -123,6 +124,7 @@ const Destination = () => {
         <Text fontSize={"14px"} fontWeight="400" position={"relative"} color="whitesmoke">
             {el.text}
         </Text>
+        </Link>
         </Box>
     )})}
     </Slider>

@@ -89,25 +89,25 @@ const Managed = () => {
     </Box>
    </Box>
 
-   <Box w={{base:"100%", lg:"65%"}} h="auto" ml={{base:"auto",lg:"2rem"}}>
+   <Box w={{base:"100%", lg:"65%"}} h="auto" ml={{base:"auto",lg:"1rem"}}>
      <Grid
-      templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(4, 1fr)" }}
+      templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
             gap={6}
-      templateRows={{base:"repeat(10,auto)", lg:"repeat(4,1fr)"}}>
+      templateRows={{base:"repeat(2,auto)", lg:"repeat(4,1fr)"}}>
        {data.map((el)=>{
         return(
             <GridItem
             m={{base:"auto"}} sx={boxStyle} w={"100%"} height="150px">
               <Image 
                 src={el.img} h="150px"
-                filter={'auto'} brightness='50%' w={{base:"80%",lg:"100%"}}
+                filter={'auto'} brightness='50%' w={{base:"100%",lg:"100%"}}
               />
               <Flex direction={"column"} justifyContent="center" alignItems={"center"}
               alignItem="center" fontSize={"15px"} 
               alignContent="center">
               <Text textAlign={"center"}
                fontWeight="700" position={"relative"}
-              color="white" ml={{base:"-18rem",md:"-32rem",lg:"-8rem",xl:"-10rem","2xl":"-12rem"}}>
+              color="white" ml={{base:"-8rem",md:"-20rem",lg:"-10rem",xl:"-10rem","2xl":"-12rem"}}>
              {el.name}
               </Text>
               <Text 
@@ -117,7 +117,7 @@ const Managed = () => {
                fontSize={"13px"}
                 color="whitesmoke"
                 ml={{
-                 base: "-18rem",
+                 base: "-8rem",
                  md: "-32rem",
                  lg: "-8rem",
                  xl: "-10rem",

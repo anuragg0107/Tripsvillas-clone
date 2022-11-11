@@ -3,6 +3,8 @@ import Navbar from "../../Components/Navbar/Navbar";
 import {Box, Flex, SimpleGrid, Text, Tab, TabList, TabPanel, TabPanels, Tabs, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Heading } from '@chakra-ui/react';
 import SearchData from './SearchData';
 import Holiday from './Holiday';
+import TopRated from './TopRated';
+import Faq from './Faq';
 
 const Product = () => {
     const hover={
@@ -29,7 +31,7 @@ const Product = () => {
             <TabPanels>
                 <TabPanel p="0px">
                     <Box w="80%" mt="2rem">
-                       <Flex direction={{base:"column",lg:"row"}}
+                       <Flex direction={{base:"row",lg:"row"}}
                     justifyContent="space-between">
                            <Box>
                             <Flex direction={"column"}>
@@ -112,8 +114,21 @@ const Product = () => {
       
     
     <Box>
-    <Heading as="h3" pb="20px" pt="20px" fontSize={"18px"} color="#333333" >Goa Holiday Homes</Heading> 
+    <Heading as="h3"
+     pb="20px"
+      pt="20px" fontSize={"18px"}
+       color="#333333" >Goa Holiday Homes</Heading> 
     <Holiday />
+    </Box>
+    <Box>
+    <Heading as="h3" pb="20px" mt="40px"
+     pt="20px" fontSize={"18px"}
+      color="#333333" mb="10px" >Top Rated Holiday Homes</Heading> 
+    <TopRated />
+    </Box>
+
+    <Box>
+        <Faq />
     </Box>
     </Box>
     </>

@@ -21,8 +21,8 @@ const Footer = () => {
                Holiday Homes Across The Globe
         </Text>
     <Box w="90%" h="auto" m="auto" mb="4rem">
-     <Tabs flexDirection={{base:'column',lg:'row'}}>
-        <TabList flexDirection={{base:'column',lg:'row'}}>
+     <Tabs flexDirection={{base:'row',lg:'row'}}>
+        <TabList flexDirection={{base:'row',lg:'row'}}>
           <Tab color='#999999' fontSize={"13px"} _hover={{color:"#212121"}} 
           _selected={{ borderColor: "#1e87f0" }}>
                   ASIA
@@ -59,19 +59,19 @@ const Footer = () => {
           >
             AFRICA
           </Tab>
-          <Tab
+          {/* <Tab
             _selected={{ borderColor: "#1e87f0" }}
             color='#999999'
             fontSize="13px"
             _hover={{ color: "black" }}
           >
             OCEANIA
-          </Tab>
+          </Tab> */}
         </TabList>
         <TabPanels>
             <TabPanel p="0px">
                 <Box w="100%" mt="3.4rem">
-                    <Flex direction={{base:"column",lg:"row"}}
+                    <Flex direction={{base:"row",lg:"row"}}
                     justifyContent="space-between">
                         <Box>
                             <Flex direction={"column"}>
@@ -183,7 +183,7 @@ const Footer = () => {
             </TabPanel>
             <TabPanel p="0px">
                 <Box w='100%' mt='3.4rem'>
-                    <Flex direction={{base:"column",lg:'row'}}
+                    <Flex direction={{base:"row",lg:'row'}}
                     justifyContent="space-between">
                         <Box>
                             <Flex direction={"column"}>
@@ -358,7 +358,7 @@ const Footer = () => {
             </TabPanel>
             <TabPanel p="0px">
                 <Box w="100%" mt="3.4rem">
-                    <Flex direction={{base:"column",lg:"row"}} 
+                    <Flex direction={{base:"row",lg:"row"}} 
                     justifyContent="space-between">
                         <Box>
                             <Flex direction={"column"}>
@@ -444,7 +444,7 @@ const Footer = () => {
             </TabPanel>
             <TabPanel p="0px">
                 <Box w="100%" mt="3.4rem">
-                    <Flex direction={{base:"column",lg:"row"}}
+                    <Flex direction={{base:"row",lg:"row"}}
                     justifyContent="space-between">
                         <Box>
                             <Flex direction={"column"}>
@@ -499,7 +499,7 @@ const Footer = () => {
             </TabPanel>
             <TabPanel p="0px">
                 <Box width="100%" mt="3.4rem">
-                    <Flex direction={{base:"column",lg:"row"}}
+                    <Flex direction={{base:"row",lg:"row"}}
                     justifyContent="space-between">
                         <Box>
                             <Flex direction={"column"}>
@@ -576,10 +576,10 @@ const Footer = () => {
                     </Flex>
                 </Box>
             </TabPanel>
-            <TabPanel p="0px">
+            {/* <TabPanel p="0px">
             <Box width="100%" mt="3.4rem"> 
             <Box>
-                <Flex direction={{base:"column",lg:"row"}}
+                <Flex direction={{base:"row",lg:"row"}}
                 justifyContent="space-between" width={"40%"}>
               
                   <Box>
@@ -610,7 +610,7 @@ const Footer = () => {
                 </Flex>
                 </Box>
             </Box>
-            </TabPanel>
+            </TabPanel> */}
         </TabPanels>
      </Tabs>
     </Box>
