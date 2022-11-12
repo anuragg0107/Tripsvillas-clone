@@ -43,14 +43,21 @@ I worked on this project during construct week at Masai School
 
 <hr />
 
-![login](https://i.ibb.co/DWLz10Z/Screenshot-31.png)
+![login](../silent-toes-7433/src/Images/Screenshot%20(31).png)
 
-![register](https://i.ibb.co/Km83jDN/Screenshot-30.png)
+<hr />
 
-![product](https://i.ibb.co/jhrDC0L/Screenshot-32.png)
+![register](../silent-toes-7433//src/Images/Screenshot%20(30).png)
 
-![singleproduct](https://i.ibb.co/CbC1cdf/Screenshot-33.png)
+<hr />
 
+![product](../silent-toes-7433/src/Images/Screenshot%20(32).png)
+
+<hr />
+
+![singleproduct](../silent-toes-7433/src/Images/Screenshot%20(33).png)
+
+<hr />
 
 
 
