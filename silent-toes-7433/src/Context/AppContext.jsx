@@ -32,8 +32,7 @@ export default function AppContextProvider({children}){
    const handleCreateAccount=(fname, lname, email, pass)=>{
     const unique_id = uuid();
     const small_id = unique_id.slice(0, 8);
-    axios
-      .post(`https://dak-db.herokuapp.com/users`, {
+    axios.post(`https://dak-db.herokuapp.com/users`, {
         token: small_id,
         firstname: fname,
         lastname: lname,

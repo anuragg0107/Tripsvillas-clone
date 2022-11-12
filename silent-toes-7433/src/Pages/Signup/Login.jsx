@@ -15,7 +15,7 @@ import {
 } from '@chakra-ui/react';
 import { AppContext } from '../../Context/AppContext';
  import { Navigate } from 'react-router-dom';
-
+import Signup from "./Signup";
 const Login = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [email,setEmail]=useState("");
@@ -27,6 +27,9 @@ const Login = () => {
   //   return <Navigate to="/" />
   // }
 
+  const handleSignup=()=>{
+    return <Signup />
+  }
     return (
     <>
     <Button background={"white"}  onClick={onOpen}>Sign In</Button>
@@ -43,7 +46,9 @@ const Login = () => {
              <Button background={"white"}
              _hover={{background:"white"}}
              fontSize={"13.125px"} pl="119px" pt="10px"
-              color={"#1e87f0"} >Sign Up Instead</Button>
+              color={"#1e87f0"}
+               onclick={handleSignup}
+               >Sign Up Instead</Button>
            </Flex>
         </Box>
     </ModalHeader>

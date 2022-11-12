@@ -330,7 +330,7 @@ const SingleProduct = () => {
         <TabPanels>
             <TabPanel p="0px">
                 <Box w="170%" mt="3.4rem">
-                    <Flex direction={{base:"row",lg:"row"}}
+                    <Flex direction={{base:"column",lg:"row"}}
                     justifyContent="space-between">
                     <Box>
                       <Box
@@ -365,7 +365,7 @@ const SingleProduct = () => {
                     </Box>      
                        
                        <Box>
-                        <Text ml="50px" flexDirection={{base:"row",lg:"column"}}>
+                        <Text ml="50px" flexDirection={{base:"column",lg:"row"}}>
                         This Apartment rests on the 4th Floor, This apartment can accommodate maximum 4 guests. It has One Air-Conditioned bedroom with a double bed. Extra mattresses are provided. It also has a lift facility and private parking in the complex and 24X7 security services.
 
 Living Area:
@@ -386,7 +386,7 @@ The kitchen is separate and is fully equipped with a Double door fridge, Inducti
             </TabPanel>
             <TabPanel p="0px">
                 <Box w='100%' mt='3.4rem'>
-                    <Flex flexDirection={{base:"row",lg:"row"}} justifyContent="space-between">
+                    <Flex flexDirection={{base:"column",lg:"row"}} justifyContent="space-between">
                     <Box width={"400px"}>
                       <Text color="#666666" fontFamily={"ProximaNOva"} fontSize="15px">
                       Default Cancellation Policy 

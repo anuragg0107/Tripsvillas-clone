@@ -1,7 +1,6 @@
 import {Text, Box, Flex, Image, Button, Menu, IconButton,Divider, useDisclosure} from '@chakra-ui/react'
 import React, { useState } from 'react';
 import { ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
-import styled from './Navbar.modules.css';
 import {Popover,PopoverTrigger,PopoverContent,PopoverHeader,PopoverBody,PopoverFooter,PopoverArrow, PopoverCloseButton,PopoverAnchor, } from '@chakra-ui/react'
 import { Link, useNavigate } from 'react-router-dom';
 import {

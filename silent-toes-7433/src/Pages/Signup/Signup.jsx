@@ -15,6 +15,7 @@ import {
 } from '@chakra-ui/react'
 import { Link, Navigate } from 'react-router-dom'
 import { AppContext } from '../../Context/AppContext'
+import Login from './Login'
 
 const Signup = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -24,7 +25,9 @@ const Signup = () => {
    const [pass,setpass]=useState("")
    const {handleCreateAccount,  auth} = useContext(AppContext);
     
- 
+//  const handlelogin=()=>{
+//   return <Login />
+//  }
 
     return (
     <>
@@ -42,7 +45,9 @@ const Signup = () => {
              <Button background={"white"}
              _hover={{background:"white"}}
              fontSize={"13.125px"}
-              color={"#1e87f0"} >Sign In Instead</Button>
+              color={"#1e87f0"} 
+              // onClick={handlelogin}
+              >Sign In Instead</Button>
            </Flex>
         </Box>
     </ModalHeader>
