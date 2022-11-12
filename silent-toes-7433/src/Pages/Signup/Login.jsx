@@ -47,7 +47,7 @@ const Login = () => {
              _hover={{background:"white"}}
              fontSize={"13.125px"} pl="119px" pt="10px"
               color={"#1e87f0"}
-               onclick={handleSignup}
+              onclick={handleSignup}
                >Sign Up Instead</Button>
            </Flex>
         </Box>
