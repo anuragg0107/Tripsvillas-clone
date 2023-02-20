@@ -25,7 +25,7 @@ I worked on this project during construct week at Masai School
 
 ## Important Links 🔗
 
-<a href="https://silent-toes-7433-anuraggupta199418-gmailcom.vercel.app/>Deployed Vercel Link </a>
+<a href="https://silent-toes-7433-anuraggupta199418-gmailcom.vercel.app/">Deployed Vercel Link </a>
 <br/>
 <a href="https://github.com/anuragg0107">Github Link </a>
 <br/>
